@@ -19,6 +19,9 @@ on:
         required: true
         default: 'Release'
 
+permissions:
+  contents: write
+
 jobs:
   Build:
     runs-on: ${{ matrix.os }}
